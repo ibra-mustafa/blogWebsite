@@ -1,0 +1,20 @@
+*{
+  font-family:'poppins','Courier New', Courier, monospace;
+  font-weight: 1000;
+}
+nav{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.link{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5%;
+}
+.link:hover{
+  background-color: white;
+  color: #000;
+
+}
