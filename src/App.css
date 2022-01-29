@@ -16,5 +16,29 @@ nav{
 .link:hover{
   background-color: white;
   color: #000;
+}
+body{
+  width: 100%;
+}
+.createPost{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
 
+.createPostContainer{
+  border-radius: 5px;
+  width: 40%;
+  background-color: #000;
+  color:white;
+  display: flex;
+  flex-flow: column;
+}
+.createPostContainer label{
+  padding: 20px;
+}
+
+.createPostContainer input{
+  width: 50%;
+  margin: 0px 0px 20px 20px;
 }
