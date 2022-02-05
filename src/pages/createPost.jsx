@@ -11,7 +11,7 @@ function Create({isAuth}) {
     let nav = useNavigate()
     const createPost = async ()=>{
         await addDoc(postCollectionRef,{title:pTitle,
-             cotnent:pContent, 
+             content:pContent, 
              author:{name: auth.currentUser.displayName ,
                 id: auth.currentUser.uid}})
                 nav("/")
