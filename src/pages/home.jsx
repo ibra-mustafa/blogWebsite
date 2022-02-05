@@ -19,22 +19,25 @@ function Home() {
     }
     
     return ( 
-        <div>
+        <div className='home'>
             {pList.map((e)=>{
-                return(<div>
-                    {console.log(e.d._key.path.segments[6])}
-                <div>
-                {e.title}
-                </div>
-                <div>
-                {e.content}
-                </div>
-                <div>
-                {e.author.name}
+                return(<div className='post'>
+                
+                <span className='delete'>
                 <button onClick={()=>deleteP(e.d._key.path.segments[6])}>
                     X
                 </button>
+                </span>
+                <h2 className='title'>
+                {e.title}
+                </h2>
+                <div className='content'>
+                {e.content}
                 </div>
+                <div className='author'>
+                @{e.author.name}
+                </div>
+               
                 </div>
                 )})}
         </div>
